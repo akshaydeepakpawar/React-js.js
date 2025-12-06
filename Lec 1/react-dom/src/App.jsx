@@ -11,14 +11,17 @@ import Product from './components/Product'
 import Weather from './components/Weather'
 import UserStatus from './components/UserStatus'
 import Greeting2 from './components/Greeting2'
+import StyleCard from './components/StyleCard'
+import ProfileCard from './components/ProfileCard'
+import IconComponents from './components/IconComponents'
 
 
 const App = () => {
   return (
     <div className='flex justify-evenly'>
-      <Weather temprature={14}/>
-      <UserStatus isLoggedin={true} isAdmin={false}/>
-      <Greeting2 timeofDay="afternoon"/>
+      <StyleCard/>
+      <ProfileCard/>
+      <IconComponents/>
     </div>
   )
 }
