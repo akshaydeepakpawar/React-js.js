@@ -23,17 +23,14 @@ import ApicalluseEffect from './components/ApicalluseEffect'
 import { UserProvider } from './components/UserContext'
 import UserProfile from './components/UserProfile'
 import UpdateUser from './components/UpdateUser'
+import CounterReducer from './components/CounterReducer'
 
 
 const App = () => {
   return (
-    // <div className=''>
-
-    // </div>
-    <UserProvider>
-      <UserProfile/>
-      <UpdateUser/>
-    </UserProvider>
+    <div className=''>
+        <CounterReducer/>
+    </div>
   )
 }
 

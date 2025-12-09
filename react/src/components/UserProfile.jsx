@@ -3,7 +3,7 @@ import { UserContext } from './UserContext'
 
 const UserProfile = () => {
 
-    const {user} =useContext(UserContext)
+  const {user} =useContext(UserContext)
 
   return (
     <div>
