@@ -25,12 +25,21 @@ import UserProfile from './components/UserProfile'
 import UpdateUser from './components/UpdateUser'
 import CounterReducer from './components/CounterReducer'
 import Timer from './components/Timer'
+import useFetch from '../customHook/useFetch'
 
 
 const App = () => {
+
+  const [data]=useFetch("https://jsonplaceholder.typicode.com/posts");
+
   return (
     <div className=''>
-        <Timer/>
+        {data?.map((user)=>{
+          return  <div key={user.id} className='p-5 m-5 border'>
+                      <h1>userId: {user.id}</h1>
+                      <h1>title: {user.title}</h1>
+                  </div> 
+        })}
     </div>
   )
 }
