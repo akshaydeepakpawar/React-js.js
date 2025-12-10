@@ -24,12 +24,13 @@ import { UserProvider } from './components/UserContext'
 import UserProfile from './components/UserProfile'
 import UpdateUser from './components/UpdateUser'
 import CounterReducer from './components/CounterReducer'
+import Timer from './components/Timer'
 
 
 const App = () => {
   return (
     <div className=''>
-        <CounterReducer/>
+        <Timer/>
     </div>
   )
 }

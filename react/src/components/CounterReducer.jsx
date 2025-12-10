@@ -12,13 +12,13 @@ const CounterReducer = () => {
         }
     }
 
-    const [count,dispatch]=useReducer(reducer,0);
+    const [state,dispatch]=useReducer(reducer,0);
     const [inputValue,setInputValue] =useState(0);
 
   return (
     <div>
         <h1 className='font-semibold font-mono'>Usereducer Example: </h1>
-        <h1 className='text-3xl font-bold ml-25'>Count :{count}</h1>
+        <h1 className='text-3xl font-bold ml-25'>Count :{state}</h1>
         <button className='py-2 px-5 border m-5 cursor-pointer' onClick={()=>dispatch({type:"increment"})}>Increment</button>
         <button className='py-2 px-5 border m-5 cursor-pointer' onClick={()=>dispatch({type:"decrement"})}>Decrement</button>
         <div>
