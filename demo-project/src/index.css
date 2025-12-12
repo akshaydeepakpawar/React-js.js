@@ -1,1 +1,4 @@
 @import "tailwindcss";
+.btn {
+  @apply py-3 bg-gray-200 rounded-md cursor-pointer active:scale-95;
+}
