@@ -1,10 +1,12 @@
 import React from 'react'
 import TodoApp from './components/TodoApp'
+import Meals from './components/Meals'
+import Calculator from './components/Calculator'
 
 const App = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gray-100 pt-10">
-      <TodoApp/>
+    <div>
+      <Calculator
     </div>
   )
 }
